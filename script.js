@@ -10,6 +10,6 @@ function isItCorrect(button) {
     counter++;
 }
 function skip() {
-    alert("Question Skipped")
+    alert("Question Skipped");
     counter++;
 }
