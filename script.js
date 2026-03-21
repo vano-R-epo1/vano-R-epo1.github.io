@@ -1,5 +1,5 @@
 let counter = 0;
-let answerArray = ["A","B","C","D","e"];
+let answerArray = ["B","C","A","E","A","D"];
 function isItCorrect(button) {
     if (answerArray[counter] === button) {
         alert("Correct");
