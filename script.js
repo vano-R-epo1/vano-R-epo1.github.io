@@ -17,5 +17,8 @@ function isItCorrect(button) {
 }
 function skip() {
     alert("Question Skipped");
+    points += 1.5;
+    const textElement = document.getElementById("points");
+    textElement.textContent = points;
     counter++;
 }
