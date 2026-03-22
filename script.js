@@ -3,9 +3,11 @@ let answerArray = ["B","C","A","E","A","D"];
 function isItCorrect(button) {
     if (answerArray[counter] === button) {
         alert("Correct");
-        const textElement = document.getElementById("points");  
-        points = number("points")
-        textElement.textContent += points
+        
+        points += 6;
+        const textElement = document.getElementById("points");
+        textElement.textContent = points;
+        
     } else {
         alert("Wrong");
     }
