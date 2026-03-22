@@ -14,6 +14,7 @@ function isItCorrect(button) {
     }
 
     counter++;
+    
 }
 function skip() {
     alert("Question Skipped");
@@ -22,3 +23,8 @@ function skip() {
     textElement.textContent = points;
     counter++;
 }
+
+
+if (counter ===  answerArray.length()) {
+        alert(points)
+    }
