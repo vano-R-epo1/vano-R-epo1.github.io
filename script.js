@@ -1,5 +1,6 @@
 let counter = 0;
 let points = 0;
+let mode = ''
 let answerArray = ["B","C","A","E","A","D"];
 function isItCorrect(button) {
     if (answerArray[counter] === button) {
@@ -28,3 +29,9 @@ function skip() {
 if (counter ===  answerArray.length()) {
         alert(points)
     }
+
+
+function practiceOrTest(buttonElement, x) {
+  buttonElement.remove();
+  mode = x;
+}
