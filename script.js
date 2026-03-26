@@ -4,14 +4,17 @@ let mode = ''
 let answerArray = ["B","C","A","E","A","D"];
 function isItCorrect(button) {
     if (answerArray[counter] === button) {
-        alert("Correct");
-        
+        if (mode === "practice") {
+             alert("Correct");
+        }
         points += 6;
         const textElement = document.getElementById("points");
         textElement.textContent = points;
         
     } else {
-        alert("Wrong");
+        if (mode === "practice") {
+             alert("Wrong");
+        }
     }
 
     counter++;
@@ -27,10 +30,8 @@ function skip() {
 
 
 if (counter ===  answerArray.length()) {
-        if (mode === "practice") {
-            alert(points)
-        }
-    }
+        alert(points)
+}
 
 
 function practiceOrTest(buttonElement, x) {
