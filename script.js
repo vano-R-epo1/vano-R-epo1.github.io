@@ -27,7 +27,9 @@ function skip() {
 
 
 if (counter ===  answerArray.length()) {
-        alert(points)
+        if (mode === "practice") {
+            alert(points)
+        }
     }
 
 
