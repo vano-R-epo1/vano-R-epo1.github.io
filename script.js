@@ -32,6 +32,7 @@ if (counter ===  answerArray.length()) {
 
 
 function practiceOrTest(buttonElement, x) {
-  buttonElement.remove();
+  practice.remove();
+  test.remove();
   mode = x;
 }
