@@ -39,7 +39,7 @@ function practiceOrTest(buttonElement, x) {
   test.remove();
   const hiddenButtons = document.querySelectorAll('.hidden-btn');
   hiddenButtons.forEach(button => {
-    button.classList.remove('hidden-btn');
+  button.hidden = false;
   });
   mode = x;
 }
