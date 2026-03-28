@@ -37,5 +37,9 @@ if (counter ===  answerArray.length()) {
 function practiceOrTest(buttonElement, x) {
   practice.remove();
   test.remove();
+  const hiddenButtons = document.querySelectorAll('.hidden-btn');
+  hiddenButtons.forEach(button => {
+    button.classList.remove('hidden-btn');
+  });
   mode = x;
 }
