@@ -43,3 +43,12 @@ function practiceOrTest(buttonElement, x) {
   });
   mode = x;
 }
+
+function hide() {  
+var submitButton = document.getElementById('submitButton');  
+submitButton.style.display = 'none';  
+}
+
+if (mode === "test") {
+    points.hide()
+}
