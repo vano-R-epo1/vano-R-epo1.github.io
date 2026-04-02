@@ -42,6 +42,9 @@ function practiceOrTest(buttonElement, x) {
   button.hidden = false;
   });
   mode = x;
+  if (mode === "test") {
+    points.hide()
+  }
 }
 
 function hide() {  
@@ -49,6 +52,4 @@ var submitButton = document.getElementById('submitButton');
 submitButton.style.display = 'none';  
 }
 
-if (mode === "test") {
-    points.hide()
-}
+
